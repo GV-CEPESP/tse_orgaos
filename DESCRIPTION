@@ -1,11 +1,15 @@
-Package: tse_orgaos
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
-Encoding: UTF-8
+Package: tseorgaosR
+Title: Extract organ data from TSE
+Version: 0.1
+Authors@R: person("Rafael", "Coelho", email = "rafael.coelho.x@gmail.com",
+                  role = c("aut", "cre"))
+Description: What the package does (one paragraph)
+Depends: R (>= 3.1.0)
+License: MIT
 LazyData: true
+Import:
+  string,
+  httr,
+  jsonlite,
+  magrittr
+RoxygenNote: 6.0.1
