@@ -1,5 +1,7 @@
 #' Extracts party organ datas from TSE
 #' 
+#' @export
+#' 
 #' @description 
 #' 
 #' A função get_orgaos extrai os orgãos partidádios de acordo com o nível regional utilizado pelo usuário.
@@ -21,7 +23,8 @@
 #' @param uni_eleitoral_superior character - Only used with "municipal" regional agregation. The state should be specified (ex. "SP", "RJ", "BA", etc.).
 #' 
 #' @param history character - false or true. If true, the API request will return data from previous years.
-#' 
+#'
+
 
 get_orgaos <- function(agreg, partido = 0, zona = 0, uni_eleitoral = NULL, uni_eleitoral_superior = NULL, history = "false"){
   endpoint <- "consulta"
