@@ -35,11 +35,10 @@ get_orgaos <- function(agreg, partido = 0, zona = 0, uni_eleitoral = NULL, uni_e
 }
 
 #' @export
-
 get_members <- function(id_orgao){
   endpoint <- "comAnotacoesEMembros"
   url_use <- stringr::str_c(url_base, endpoint)
-  query_to_use <- build_query(endpoint, id_orgao)
+  query_to_use <- build_query(endpoint, id_orgao = id_orgao)
   make_query(url_use, query_to_use)
 }
 
